@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RART: AI-Powered Healthcare Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+<body class="bg-slate-50 text-slate-700 font-inter">
+
+    <header class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24 shadow-lg overflow-hidden">
+        <div class="absolute inset-0 bg-pattern opacity-10"></div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 animate-fade-in-down">RART</h1>
+            <p class="text-xl sm:text-2xl font-light opacity-90 mb-8 animate-fade-in-up">AI-Powered Healthcare Assistant with Human Oversight</p>
+            <a href="#overview" class="bg-white text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out px-8 py-3 rounded-full text-lg font-semibold shadow-md inline-flex items-center space-x-2 animate-scale-in">
+                Learn More
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="overview" class="py-16 bg-slate-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Project Overview</h2>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-3xl font-semibold mb-6 text-blue-600">The Challenge</h3>
+                        <p class="mb-4 text-lg text-slate-600">Patients often face significant delays in understanding their symptoms, identifying the right specialist, and booking timely appointments. This leads to increased anxiety, potential worsening of conditions, and an inefficient healthcare system burden.</p>
+                        <ul class="list-disc list-inside text-lg text-slate-600 space-y-2">
+                            <li>Lack of immediate, personalized symptom assessment.</li>
+                            <li>Difficulty navigating complex specialist referrals.</li>
+                            <li>Inefficient and time-consuming appointment booking.</li>
+                            <li>Critical need for human oversight in AI-driven healthcare decisions.</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center items-center p-4 bg-white rounded-lg shadow-md">
+                        <img src="./images/workflow_diagram.png" alt="Project Overview Diagram" class="rounded-lg max-h-96 object-contain border border-slate-200">
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <h3 class="text-3xl font-semibold mb-6 text-blue-600">Our Solution: RART</h3>
+                    <p class="text-lg text-slate-600 max-w-3xl mx-auto">
+                        <strong>RART</strong> is an intelligent, AI-powered healthcare assistant designed to streamline the patient journey from initial symptom analysis to personalized treatment planning and efficient appointment booking. A crucial component of RART is its integrated human review workflow, ensuring that every AI-driven suggestion is validated by a medical professional.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Key Features</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-blue-600 text-4xl mb-4 text-center">💡</div>
+                        <h3 class="text-xl font-semibold mb-3 text-slate-800">Intelligent Symptom Analysis</h3>
+                        <p class="text-slate-600">Utilizes advanced AI (Google Gemini) to analyze patient-described symptoms, determine severity (low, medium, high, critical), and suggest the most appropriate medical specialist.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-blue-600 text-4xl mb-4 text-center">📋</div>
+                        <h3 class="text-xl font-semibold mb-3 text-slate-800">Personalized Treatment Planning</h3>
+                        <p class="text-slate-600">Generates concise, evidence-based general treatment plans tailored to the patient's condition, including initial care, what to avoid, and when to seek further attention.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-blue-600 text-4xl mb-4 text-center">📅</div>
+                        <h3 class="text-xl font-semibold mb-3 text-slate-800">Automated Appointment Booking</h3>
+                        <p class="text-slate-600">Seamlessly books appointments with the suggested specialist based on urgency, handling scenarios for immediate emergency care recommendations (bypassing direct booking).</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-blue-600 text-4xl mb-4 text-center">🧑‍⚕️</div>
+                        <h3 class="text-xl font-semibold mb-3 text-slate-800">Integrated Human Review Workflow</h3>
+                        <p class="text-slate-600">A critical step allowing medical professionals to review, modify, or reject AI's suggestions (severity, specialist, treatment plan), ensuring accuracy and ethical standards.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-blue-600 text-4xl mb-4 text-center">📧</div>
+                        <h3 class="text-xl font-semibold mb-3 text-slate-800">Automated Email Notifications</h3>
+                        <p class="text-slate-600">Sends comprehensive appointment confirmations and reviewed treatment plans directly to the patient's email address.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="text-blue-600 text-4xl mb-4 text-center">⚙️</div>
+                        <h3 class="text-xl font-semibold mb-3 text-slate-800">Modular & Extensible Design</h3>
+                        <p class="text-slate-600">Built with LangChain and LangGraph for a robust, scalable, and easily extendable agentic workflow, facilitating future enhancements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="workflow" class="py-16 bg-slate-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold mb-12 text-slate-800">How RART Works: Workflow</h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-3xl mx-auto">
+                    The core of RART's operation is a sophisticated, AI-driven workflow managed by LangGraph, ensuring a seamless and intelligent patient journey from initial symptoms to comprehensive care.
+                </p>
+
+                <div class="image-container bg-white p-6 rounded-lg shadow-lg">
+                    <img src="./images/workflow_diagram.png" alt="RART Project Workflow Diagram" class="rounded-lg border border-slate-200">
+                    <p class="image-caption mt-4">Figure: Detailed Workflow of the RART Application, showing agent interactions and decision points.</p>
+                </div>
+
+                <div class="text-left mt-12 grid md:grid-cols-2 gap-8 text-lg text-slate-600">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Workflow Steps:</h3>
+                        <ol class="list-decimal list-inside space-y-3">
+                            <li><strong>Patient Input:</strong> Patient describes symptoms, provides name and email via the Streamlit user interface.</li>
+                            <li><strong>Symptom Analysis (AI):</strong> The Symptom Analyzer Agent (using Google Gemini) determines symptom severity and suggests a specialist. <em>If critical symptoms are detected, the system advises immediate emergency care and the process concludes without automated booking.</em></li>
+                            <li><strong>Treatment Planning (AI):</strong> The Treatment Planning Agent generates a personalized general treatment plan based on the AI's initial assessment.</li>
+                            <li><strong>Human Review:</strong> The system routes to the Human Review Agent, presenting the AI's suggestions to a medical professional. Here, they can review, modify, or reject the AI's assessment and treatment plan.</li>
+                            <li><strong>Appointment Booking:</strong> If the AI's suggestions are approved (or modified and approved) by the human reviewer, the Appointment Booking Agent attempts to secure an appointment with the suggested specialist.</li>
+                            <li><strong>Email Confirmation:</strong> The Email Sender Agent dispatches a comprehensive email to the patient, including appointment details and the reviewed treatment plan.</li>
+                            <li><strong>Completion:</strong> The process concludes, providing the patient with clear next steps and confirmation.</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Key Workflow Integrations:</h3>
+                        <ul class="list-disc list-inside space-y-3">
+                            <li><strong>LangGraph Orchestration:</strong> The entire multi-step process is seamlessly orchestrated by LangGraph, managing state transitions and agent calls.</li>
+                            <li><strong>Agent-Tool Interaction:</strong> Each agent leverages specific tools (e.g., `gemini_api_tool`, `booking_simulator_tool`, `email_sender_tool`) to perform its designated tasks.</li>
+                            <li><strong>Human-in-the-Loop:</strong> The human review step is a critical control point, ensuring accuracy and ethical guidelines are met before patient communication.</li>
+                            <li><strong>Conditional Routing:</strong> The workflow dynamically adapts based on AI analysis (e.g., critical vs. non-critical symptoms) and human review decisions (e.g., approval vs. rejection).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture" class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold mb-12 text-slate-800">RART System Architecture</h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-3xl mx-auto">
+                    RART's robust architecture is designed for modularity, scalability, and secure operation, integrating AI capabilities with essential human oversight.
+                </p>
+
+                <div class="image-container bg-slate-50 p-6 rounded-lg shadow-lg">
+                    <img src="./images/architectural_diagram.png" alt="RART System Architecture Diagram" class="rounded-lg border border-slate-200">
+                    <p class="image-caption mt-4">Figure: Architectural Overview of RART's Components and Interactions.</p>
+                </div>
+
+                <div class="text-left mt-12 grid md:grid-cols-2 gap-8 text-lg text-slate-600">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Key Architectural Layers:</h3>
+                        <ul class="list-disc list-inside space-y-3">
+                            <li><strong>User Interface Layer:</strong> Developed with Streamlit (`app.py`), serving as the primary interaction point for both patients (input) and medical professionals (review portal).</li>
+                            <li><strong>Core Workflow Orchestration:</strong> Powered by LangGraph (`workflow_builder.py`), it defines and manages the multi-step execution flow, using `AgentState` (`agent_state.py`) for shared data.</li>
+                            <li><strong>AI Agents Layer:</strong> Comprises specialized Python functions (e.g., `symptom_analyzer_agent.py`, `treatment_planning_agent.py`, `human_review_agent.py`, `appointment_booking_agent.py`, `email_sender_agent.py`) acting as nodes in the LangGraph, each responsible for a specific process step.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-600">Interactions & External Services:</h3>
+                        <ul class="list-disc list-inside space-y-3">
+                            <li><strong>Tools Layer:</strong> Encapsulates specific functionalities as LangChain Tools (e.g., `gemini_api_tool.py`, `booking_simulator_tool.py`, `email_sender_tool.py`), callable by the AI agents.</li>
+                            <li><strong>External Services:</strong>
+                                <ul class="list-circle list-inside ml-5">
+                                    <li><strong>Google Gemini API:</strong> Provides the core AI intelligence for symptom analysis and treatment plan generation.</li>
+                                    <li><strong>SMTP Server:</strong> Used for secure email communication.</li>
+                                    <li><strong>`.env` File:</strong> Manages sensitive environment variables securely using `python-dotenv`.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Data Flow:</strong> Information (patient symptoms, AI assessments, human decisions) flows through the `AgentState`, enabling seamless communication between all components.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="tech-stack" class="py-16 bg-slate-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold mb-12 text-slate-800">Technology Stack</h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-3xl mx-auto">
+                    RART is built on a modern and robust technology stack, leveraging leading frameworks for AI, workflow automation, and user interface development.
+                </p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">AI / LLM Integration</h3>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><strong>Google Gemini:</strong> Core Large Language Model for intelligent analysis and generation.</li>
+                            <li>`google-generativeai`: Python client library for interacting with Gemini API.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">Orchestration & Agents</h3>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><strong>LangChain:</strong> Foundational framework for LLM-powered applications.</li>
+                            <li><strong>LangGraph:</strong> For defining and managing complex, stateful agentic workflows.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">User Interface</h3>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><strong>Streamlit:</strong> For building fast, interactive web applications and the human review portal.</li>
+                            <li>Tailwind CSS (via CDN): For modern, utility-first styling.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">Data & Environment</h3>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><strong>`python-dotenv`:</strong> Secure loading of environment variables (API keys, SMTP configs).</li>
+                            <li>Python Standard Libraries (e.g., `datetime`, `json`): For various utilities.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">Communication</h3>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li><strong>`smtplib` (Python):</strong> For sending email notifications.</li>
+                            <li>Custom LangChain Tools: Encapsulating external interactions (e.g., email sending, booking simulation).</li>
+                        </ul>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-blue-600">Development & Deployment</h3>
+                        <ul class="list-disc list-inside text-slate-600 space-y-2">
+                            <li>Python: Primary programming language.</li>
+                            <li>`requirements.txt`: Manages project dependencies.</li>
+                            <li>Modular File Structure: Agents, tools, workflow in separate files for maintainability.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="future-plans" class="py-16 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 text-slate-800">Future Enhancements</h2>
+                <ul class="grid md:grid-cols-2 gap-8 text-lg text-slate-600 list-disc list-inside space-y-2">
+                    <li><strong class="text-blue-600">Real-world Integrations:</strong> Integrate with actual clinic management systems and pharmacy APIs for live services.</li>
+                    <li><strong class="text-blue-600">Multilingual Support:</strong> Expand language options to serve a broader user base.</li>
+                    <li><strong class="text-blue-600">Voice Interface:</strong> Integrate speech-to-text and text-to-speech for hands-free interaction.</li>
+                    <li><strong class="text-blue-600">Personal Health Records (PHR) Integration:</strong> Securely link with patient's medical history for more informed and personalized advice.</li>
+                    <li><strong class="text-blue-600">Advanced Specialist Search:</strong> Implement more sophisticated search capabilities based on availability, ratings, and user preferences.</li>
+                    <li><strong class="text-blue-600">Enhanced Security & Privacy:</strong> Further strengthen authentication, authorization, and data encryption measures.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-400">
+            <p>&copy; 2025 RART. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // No interactive JS for workflow diagram as images are used.
+        // This space is reserved for potential future interactive elements not requiring Chart.js/Plotly.js
+    </script>
+</body>
+</html>
